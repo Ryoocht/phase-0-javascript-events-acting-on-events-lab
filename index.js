@@ -10,8 +10,8 @@ function moveDodgerLeft(){
 }
 // game container 400px - dodger width 30px = 360px
 function moveDodgerRight() {
-    var leftNumbers = dodger.style.left.replace('px', '');
-    var left = parseInt(leftNumbers, 10)
+    const leftNumbers = dodger.style.left.replace('px', '');
+    const left = parseInt(leftNumbers, 10)
     if (left < 360) {
       dodger.style.left = `${left + 1}px`
     }
